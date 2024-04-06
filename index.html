@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book Library - A User Friendly site to Read and Download Books</title>
+    <link rel="stylesheet" href="Link_content/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" href="./assests/book_logo.png">
+</head>
+
+<body>
+    <div class="main-container" >
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">Blink Reads
+                    <i class="ri-book-open-fill change-brand-logo"></i>
+                </a>
+                <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse flex-end" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="#main" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle courses" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#test" class="nav-link">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cta" class="nav-link">Contact us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link"></a>
+                        </li> -->
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 btn-sm mani" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn search" type="submit">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-section" id="main">
+        <div class="container-left">
+            <h1 class="h1-class">Read your favourite book from here</h1>
+            <h5 class="h5-class">Dive into Boundless Knowledge with Blink Reads the website for people who loves to read
+                and share similar thoughts</h5>
+            <button class="btn btn-outline-dark btn-sm">Read More</button>
+        </div>
+
+        <div class="container-fluid img-container">
+            <img src="assests/book_img.jpg" alt="img-book" class="img-main-section">
+            <h3 class="h3-class">About Blink Reads</h3>
+            <h6 class="h6-class">Access a vast digital collection of books spanning genres, authors , coding languages
+                and basic IT stuffs right at your fingertips</h6>
+
+                <button class="btn btn-outline-dark">REGISTER OR LOGIN </button>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+    <div class="featured-section">
+        <h2 class="feature-h2">Featured Books</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-3 text-center row-flex">
+            <div class="card">
+                <div class="card-header">
+                    <h3>C++</h3>
+                </div>
+                <img src="assests/C++.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">It covers C++ features, techniques, and idioms in-depth, making it a valuable</p>
+                    <a href="Pdf/balguru_swami.pdf" target="_blank" class="btn btn-dark">Read Book</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Java</h3>
+                </div>
+                <img src="assests/Java.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">It provides a approach to master 
+                        programming languages</p>
+                    <a href="Pdf/java_interview.pdf" target="_blank" class="btn btn-dark">Read Book</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Python</h3>
+                </div>
+                <img src="assests/Python.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">It equips you with the knowledge to become a python programmer</p>
+                    <a href="Pdf/A Practical Introduction to Python Programming .pdf"  target="_blank "class="btn btn-dark">Read Book</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+   <!-- Test -->
+   <div class="container test-container" id="test">
+    
+    <div class="row">
+        <h1 style="text-align:center;
+    color:white;
+    margin-top:12px;
+    font-family: Poppins;">Reviews by Customer</h1>
+        <div class="col-lg-4">
+            <div class="card c-test">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1492447166138-50c3889fccb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9pdHJhdGUlMjBtZW4lMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Robert Garrison
+                    </div>
+                    <div class="designation">JavaScript Developer</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        I have been using this eBook library management system for a few weeks now The interface is intuitive making it easy to search for and access titles. Highly recommended for any book reader..
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card c-test">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1683783108736-a1cea00deced?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Ella Nelson
+                    </div>
+                    <div class="designation">Java Developer</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        It adapts seamlessly to my needs The ability to customize fields and generate reports has made administrative tasks a breeze.. 
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card c-test">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Lily Walker
+                    </div>
+                    <div class="designation">C++ Programer</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        This E-Book library management solution has revolutionized the way I interact with my digital books..
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="deal-day-container">
+    <div class="left-div-deal">
+        <h1 class="deal-h1">Deal of the day</h1>
+        <h3 class="deal-h3">Upto 50% Off</h3>
+        <p class="deal-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore repellendus animi repellat quos sapiente impedit, aspernatur, perspiciatis quasi rem, dignissimos obcaecati?</p>
+        <button class="btn btn-success b">Shop Now</button>
+    </div>
+    <div class="right-div-deal">
+        
+    </div>
+    
+</div>
+    
+  <!-- </div> -->
+
+
+<section id="features">
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 d pad">
+        <i class="ri-checkbox-circle-fill"></i>
+        <h3 class="col-4 h3-class">Easy to use.</h3>
+        <p class="col-4 p-class">100% safe site for book reading</p>
+      </div>
+      
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 d pad">
+        <i class="ri-focus-2-line"></i>
+        <h3 class="col-4 h3-class">Focused Reading</h3>
+        <p class="col-4 p-class">For people who loves to read</p>
+      </div>
+      
+      
+        <div class="col-lg-4 col-md-6 col-sm-12 d pad">
+          <i class="ri-heart-fill"></i>
+          <h3 class="col-4 h3-class">Guaranteed to work.</h3>
+          <p class="col-4 p-class">Find the book of yours life here</p>
+        </div>
+        
+      
+    </div>
+  
+
+  </section>
+
+
+  <div class="subscribe-img-container">
+    <div class="left-div"></div>
+    <div class="right-div-sub">
+        <h5 class="h5-class">Subscribe for Latest Updates</h5>
+    <label for="text"></label>
+    <div class="right-div-sub-f">
+        <input type="text" id="text" placeholder="Enter your email">
+        <button class="btn btn-success">Subscribe</button>
+    </div>
+    
+    </div>
+    
+  </div>
+
+
+
+    <footer id="footer">
+        <i class="social-icon ri-facebook-fill"></i>
+        <i class="social-icon ri-twitter-fill"></i>
+        <i class="social-icon ri-instagram-fill"></i>
+        <p class="social-icon para-footer" style="font-weight: 600;">© Copyright Blink Reads</p>
+        <p class="para-footer">Developed by Ayush Lingayat</p>
+        
+      </footer>
+    
+
+    <script src="Link_content/JS/bootstrap.bundle.min.js"></script>
+    <script src="./testinomial.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login : E-book Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background-image: url('https://images.unsplash.com/photo-1592266410754-215a62d41f82?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #0C0F1F;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #2f3458;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* reg-img */
+
+        .reg-imp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:24px;
+        }
+        .reg-anchor{
+            color:rgb(121, 121, 255);
+            text-decoration: none;
+            
+        }
+        .reg-anchor-home{
+            color:rgb(0, 0, 0);
+            text-decoration: none;
+            
+        }
+        .reg-anchor-home:hover{
+            color:rgb(102, 97, 255);
+            text-decoration: none;
+            
+        }
+        .reg-anchor:visited{
+            color:rgb(80, 80, 255)
+        }
+
+        .reg-home{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="registrationForm" action="#">
+            <input type="text" id=email" name="username" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Register">
+        </form>
+        <div class="reg-imp">
+            <a href="#" class="reg-anchor">Forget Password</a>
+            <a href="./registration.html" class="reg-anchor">Register Now</a>
+        </div>
+        <div class="reg-home">
+            <a href="./index.html" target="_blank" class="reg-anchor-home mt-3">Back to Home Page</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        
+       
+        var username = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+        setTimeout(function() {
+            alert("Registration successful!\nEmail: " + email + "\nPassword: " + password);
+            document.getElementById("registrationForm").reset(); 
+        }, 1000);
+    });
+    </script>
+</body>
+</html>

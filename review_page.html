@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html , body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-image: url('https://plus.unsplash.com/premium_photo-1667969521269-435b528eb291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 2;
+    }
+
+    .container-form{
+        width: 60%;
+        height: 70vh;
+        background-image: url('https://plus.unsplash.com/premium_photo-1667969521269-435b528eb291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 3;
+           
+    }
+
+    .form-container{
+        padding:0 4.5vw;
+    }
+
+    label{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    }
+
+    #fname{
+        height: 24px;
+        width: 200px;
+        border: none;
+        border-bottom: 2px solid black;
+        margin:2vw 3vw;
+    }
+    #lname{
+        height: 24px;
+        width: 200px;
+        border: none;
+        border-bottom: 2px solid black;
+        margin:2vw 3vw;
+    }
+    #email{
+        height: 24px;
+        width: 400px;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    #review{
+        height: 124px;
+        width: 400px;
+    }
+
+    .h1-class{
+        padding:2vw 3vw;
+    }
+
+
+    .flex-items{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom:40px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-left:70px;
+        gap:14px;
+    }
+
+    .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        padding:1vw;
+        width: 150px;
+        border-radius:15px;
+        font-weight: 500;
+        background-color: rgb(34, 34, 34);
+        color:#fff;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: rgb(81, 81, 81);
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1-class">Give your Reviews Here !</h1>
+
+        <div class="container-form">
+
+            <div class="form-container">
+                <form action="">
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="Enter your First Name here" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" placeholder="Enter your Last Name here" id="lname">
+                </form>
+            </div>
+           
+            <div class="flex-items">
+                <form action="#">
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter Your Email" id="email"/>
+                    <label for="review">Review</label>
+                    <textarea name="review" id="review" cols="30" rows="10"></textarea>
+                 </div>
+                    
+                </form>
+            </div>
+                
+            <div class="btn-container">
+                <button>Submit</button>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
